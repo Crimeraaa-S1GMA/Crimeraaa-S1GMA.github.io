@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swear Filter Bypasser</title>
+    <script src="converter.js" type="text/javascript"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="centralizer">
+        <div id="container"><h1>Swear Filter Bypasser</h1>
+            <p>Here is a tool to convert Latin script texts to similar-looking characters in the <a href="https://en.wikipedia.org/wiki/Cherokee_syllabary">Cherokee syllabary writing system</a>. This can be useful for bypassing swear filters, or just giving your text a cool style.</p>
+            <p>Note: This tool currently only supports the 26 letters in the English alphabet. Other symbols will remain unaffected. Not all characters are converted, since some replacements couldn't be found.</p>
+            <div>
+                <div class="field-container">
+                    <h2>Original text</h2>
+                    <input type="text" id="originalText">
+                </div>
+                <div class="field-container">
+                    <h2>Algorithm</h2>
+                    <select name="algorithmUsed" id="algorithmUsed">
+                        <option value="classic">Classic (Cherokee syllabary)</option>
+                        <option value="classicDotted">Classic Interrupted (Cherokee syllabary)</option>
+                        <option value="cyrillic">Cyrillic</option>
+                        <option value="cyrillicDotted">Cyrillic Interrupted</option>
+                        <option value="blocksDotted">Blocks Interrupted</option>
+                        <option value="originalTextDotted">Original Text Interrupted</option>
+                    </select></div>
+                <div class="field-container">
+                    <h2>Result</h2>
+                    <input type="text" id="convertedText" readonly></div>    
+            </div>
+            <button onclick="conversion()">Convert!</button></div>
+    </div>
+</body>
+</html>

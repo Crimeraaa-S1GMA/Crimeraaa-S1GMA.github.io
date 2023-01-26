@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unbounded&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #161515;
+    color: #d8d8d8;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Unbounded', cursive;
+    margin: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: 'Unbounded', cursive;
+    margin: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h3 {
+    margin-bottom: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p {
+    font-size: 20px;
+}
+
+.link {
+    color: #ff6c17;
+}
+
+.link:hover {
+    color: #ffb286;
+}
+
+.link:active {
+    color: #ffeadd;
+    text-decoration: none;
+}
+
+.site-banner {
+    background-image: url("assets/img/banner.webp");
+    background-attachment: fixed;
+    background-size: auto 600px;
+    color: #FFFFFF;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h1 {
+    color: #f08c52;
+    font-size: 40px;
+}
+
+.banner-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.site-main-section {
+    text-align: center;
+}
+
+.section-coloralt {
+    background-color: #201f1f;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-thumbnail {
+    margin: 10px;
+}
+
+.game-thumbnail:hover {
+    filter: brightness(80%);
+}
+
+.game-thumbnail:active {
+    filter: brightness(60%);
+}
+
+.href-button {
+    display: inline-block;
+    background-color: #353535;
+    color: #cccccc;
+    padding: 10px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.href-button:hover {
+    background-color: #474747;
+}
+
+.href-button:active {
+    background-color: #636363;
+}
+
+.project-list {
+    background-color: #2e2c2c;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.scroll-up {
+    float: right;
+    position: sticky;
+    bottom: 0;
+}
+
+.message-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 150px;
+}
+
+@media screen and (min-width: 800px) {
+    .section section {
+        width: 80%;
+    }
+
+    #logo-banner {
+        width: 500px
+    }
+
+    .project-list {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #logo-banner {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .game-thumbnail {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .game-thumbnail {
+        width: 90%;
+    }
+}
