@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimeraaa</title>
+    <meta name="description" content="I am a fan of toasters and other cringe. I make terrible games that people like playing for some weird undisclosed reason. I also do Scratch ban speedruns.">
+    <meta name="keywords" content="crimeraaa, cringe, toasters, gamedev, projects">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function showButton() {
+        
+            var button  = $('#scroll-btn'), //button that scrolls user to top
+                view = $(window),
+                timeoutKey = -100;
+
+            button.fadeOut(0);
+        
+            $(document).on('scroll', function() {
+                if(timeoutKey) {
+                    window.clearTimeout(timeoutKey);
+                }
+                timeoutKey = window.setTimeout(function(){
+        
+                    if (view.scrollTop() > 50) {
+                        button.fadeIn(100);
+                    }
+                    else {
+                        button.fadeOut(100);
+                    }
+                }, 10);
+            });
+        }
+        
+        $('#my-button').on('click', function(){
+            $('html, body').stop().animate({
+                scrollTop: 10
+            }, 10, 'linear');
+            return false;
+        });
+        
+        //call function on document ready
+        $(function(){
+           showButton();
+        });
+        </script>
+</head>
+<body>
+    <div class="site-banner">
+        <header>
+            <div class="banner-content">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Crimera Games" id="logo-banner" style="display: block;"></a>
+                <h3>Solo game developer</h3>
+                <a href="#welcome" class="href-button"><i class="demo-icon icon-down-open"></i> Read more</a>
+            </div>
+        </header>
+    </div>
+    
+    <main>
+        <div class="site-main-section">
+            <div class="section">
+                <section>
+                    <h1 id="welcome">Welcome!</h1>
+                    <p>I am a solo game developer who made games in Unity, and now switched to Godot. I publish my games on <a class="link" href="https://gamejolt.com/@crimeraaa" target="_blank">Game Jolt</a> and <a class="link" href="https://crimeraaa.itch.io" target="_blank">itch.io</a>.</p>
+                    <p>In addition to that, I also make <a class="link" href="https://www.deviantart.com/scemerfromrussia" target="_blank">pixel art</a>, and post content on my 
+                        <a class="link" href="https://www.youtube.com/channel/UC5RP2B5O8p0LqReZbs3Pf_Q" target="_blank">YouTube channel</a>.</p>
+                    <p>This website is kind of a main hub for my personal projects, so you can feel free to check it out. It's quite small at the time, but I hope it'll grow with new things over time.</p>
+                </section>
+            </div>
+            <div class="section section-coloralt">
+                <section>
+                    <h1>Games</h1>
+                    <p>Here are some of my featured games!</p>
+                    <div class="game-container">
+                        <a href="https://gamejolt.com/games/comer/788131" target="_blank">
+                            <img src="assets/img/game_thumbnails/comer.png" alt="Comer" class="game-thumbnail">
+                        </a>
+                        <a href="https://gamejolt.com/games/ss2_official/719122" target="_blank">
+                            <img src="assets/img/game_thumbnails/ss2.png" alt="Square Shooter 2" class="game-thumbnail">
+                        </a>
+                        <a href="https://gamejolt.com/games/hellh0le_island/683761" target="_blank">
+                            <img src="assets/img/game_thumbnails/hellhole.png" alt="Hellhole Island" class="game-thumbnail">
+                        </a>
+                        <a href="https://gamejolt.com/games/ierevolved/705816" target="_blank">
+                            <img src="assets/img/game_thumbnails/imposter.png" alt="Imposter Evolution: REVOLVED" class="game-thumbnail">
+                        </a>
+                        <a href="https://gamejolt.com/games/clunkyrocket/729211" target="_blank">
+                            <img src="assets/img/game_thumbnails/crrefueled.png" alt="Clunky Rocket: Refueled" class="game-thumbnail">
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="section">
+                <section>
+                    <h1>Other projects</h1>
+                    <div class="project-list">
+                        <div class="project">
+                            <img src="assets/img/message1.png" alt="" width="100">
+                            <h2>BotBuild</h2>
+                            <p>BotBuild is an upcoming self-hosted alternative to mainstream Discord bots, written in Python and using the discord.py library.</p>
+                            <a class="link" href="https://github.com/Crimeraaa-S1GMA/BotBuild" target="_blank">Check it out!</a>
+                        </div>
+                        <div class="project">
+                            <img src="assets/img/message1.png" alt="" width="100">
+                            <h2>Scratch Comment Bot</h2>
+                            <p>A simple comment bot for the Scratch website. You can get banned for using this pretty easily.</p>
+                            <a class="link" href="https://github.com/Crimeraaa-S1GMA/ScratchCommentBot" target="_blank">Check it out!</a>
+                        </div>
+                        <div class="project">
+                            <img src="assets/img/message1.png" alt="" width="100">
+                            <h2>Scratch F4F Bot</h2>
+                            <p>A simple follow-for-follow bot for scratch, which follows a bunch of random people by creating a network of follow dependencies. You also can get banned for using this!</p>
+                            <a class="link" href="https://github.com/Crimeraaa-S1GMA/ScratchF4FBot" target="_blank">Check it out!</a>
+                        </div>
+                        <div class="project">
+                            <img src="assets/img/message1.png" alt="" width="100">
+                            <h2>Swear Filter Bypasser</h2>
+                            <p>A tool which converts Latin script texts to similar-looking characters in the Cherokee syllabary writing system. This can be useful for bypassing swear filters, or just giving your text a cool style.</p>
+                            <a class="link" href="https://crimeraaa-s1gma.github.io/SwearFilterBypasser/" target="_blank">Check it out!</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section section-coloralt">
+                <section>
+                    <h1>Contact/Social</h1>
+                    <p>Here are the links to my social media pages where you can see my other stuff or chat with me.</p>
+                    <a class="href-button" href="https://gamejolt.com/@crimeraaa" target="_blank"><i class="demo-icon icon-gamepad"></i> Game Jolt</a>
+                    <a class="href-button" href="https://discord.com/invite/gdqfg5WtMp" target="_blank"><i class="demo-icon icon-chat"></i> Discord server</a>
+                    <a class="href-button" href="https://www.youtube.com/channel/UC5RP2B5O8p0LqReZbs3Pf_Q" target="_blank"><i class="demo-icon icon-youtube-play"></i>  YouTube channel</a>
+                    <a class="href-button" href="https://www.deviantart.com/scemerfromrussia" target="_blank"><i class="demo-icon icon-deviantart"></i> DeviantArt</a>
+                    <a class="href-button" href="https://twitter.com/crimeraaa_" target="_blank"><i class="demo-icon icon-twitter"></i> Twitter account</a>
+                    <a class="href-button" href="https://soundcloud.com/crimeraaa" target="_blank"><i class="demo-icon icon-soundcloud"></i> SoundCloud</a>
+                </section>
+            </div>
+            <div class="section">
+                <footer>
+                    <p>Website by Crimera Games<br>Thanks for visiting!</p>
+                    <p>Icons are from <a href="https://fontello.com" class="link">fontello.com</a></p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="href-button scroll-up" id="scroll-btn"><i class="demo-icon icon-up-open"></i>
+</body>
+</html>
