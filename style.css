@@ -1,48 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unbounded&display=swap');
+@font-face {
+    font-family: 'basis33';
+    src: url('font/basis33.ttf') format('truetype');
+    /* Add more src lines for additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #161515;
+    background-color: #050505;
     color: #d8d8d8;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-    font-family: 'Unbounded', cursive;
+    color: #d4e1ff;
+    font-family: 'basis33';
+    font-weight: 100;
     margin: 3px;
+    font-size: 50px;
     word-wrap: break-word;
 }
 
 h2 {
-    font-family: 'Unbounded', cursive;
+    font-family: 'basis33';
+    font-weight: 100;
+    font-size: 30px;
     margin: 3px;
     word-wrap: break-word;
 }
 
 h3 {
+    font-family: 'basis33';
+    font-weight: 100;
+    font-size: 25px;
     margin-bottom: 24px;
     word-wrap: break-word;
 }
 
 p {
-    font-size: 20px;
+    font-family: 'basis33';
+    font-weight: 100;
+    font-size: 25px;
     word-wrap: break-word;
 }
 
 .link {
-    color: #ff6c17;
+    font-family: 'basis33';
+    font-weight: 100;
+    font-size: 25px;
+    color: #1759ff;
+    text-decoration: none;
 }
 
 .link:hover {
-    color: #ffb286;
+    color: #286aff;
+    text-decoration: underline;
 }
 
 .link:active {
-    color: #ffeadd;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -57,11 +78,6 @@ p {
     align-items: center;
 }
 
-.section h1 {
-    color: #f08c52;
-    font-size: 40px;
-}
-
 .banner-content {
     display: inline-block;
     text-align: center;
@@ -72,7 +88,7 @@ p {
 }
 
 .section-coloralt {
-    background-color: #201f1f;
+    background-color: #161616;
 }
 
 .section {
@@ -103,6 +119,8 @@ p {
 }
 
 .href-button {
+    font-family: 'basis33';
+    font-size: 25px;
     display: inline-block;
     background-color: #353535;
     color: #cccccc;
@@ -121,7 +139,7 @@ p {
 }
 
 .project-list {
-    background-color: #2e2c2c;
+    background-color: #010101;
     max-height: 500px;
     overflow-y: auto;
     margin-left: auto;
@@ -159,7 +177,7 @@ p {
 
 @media screen and (min-width: 800px) {
     .section section {
-        width: 80%;
+        width: 50%;
     }
 
     #logo-banner {
